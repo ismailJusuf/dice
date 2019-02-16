@@ -6,6 +6,7 @@
     android:gravity="center_horizontal"
     android:background="#32D3EFF4">
 
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="200dp"
@@ -14,7 +15,7 @@
         android:layout_marginTop="80dp"/>
 
     <EditText
-        android:id="@+id/email_edit_text"
+        android:id="@+id/edit_text_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
@@ -37,14 +38,14 @@
         android:layout_marginLeft="20dp"/>
 
     <Button
-        android:id="@+id/logIn"
+        android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOG IN"
-        android:textColor="#FFFFFF"
-        android:layout_marginRight="70dp"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="50dp"
-        android:background="#3B9AAA"/>
+        android:layout_marginRight="70dp"
+        android:background="#3B9AAA"
+        android:text="LOG IN"
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>
