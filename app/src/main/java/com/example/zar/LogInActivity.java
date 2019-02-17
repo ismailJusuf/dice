@@ -8,9 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class logIn extends AppCompatActivity {
+public class LogInActivity extends AppCompatActivity {
 
-    EditText email,password;
+    EditText email, password;
     Button login;
 
     String emailS, passwordS;
@@ -32,28 +32,15 @@ public class logIn extends AppCompatActivity {
                 emailS = email.getText().toString();
                 passwordS = password.getText().toString();
 
-                if (emailS == "ismail@gmail.com"){
-
-                    if (passwordS == "123"){
-
-                    } else {
-                        Toast.makeText(logIn.this, "şifrenizi yanliş girdiniz", Toast.LENGTH_SHORT).show();
-                    }
-
+                if (!emailS.equals("ismail@gmail.com") && !passwordS.equals("1234")) {
+                    Toast.makeText(LogInActivity.this, "check your email or you password", Toast.LENGTH_SHORT).show();
                 } else {
-                    //Toast.makeText(logIn.this, "emailinizi kontrol edin", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(logIn.this,MainActivity.class);
+                    Intent intent = new Intent(LogInActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
 
             }
         });
-
-
-
-
-
-
 
     }
 }
